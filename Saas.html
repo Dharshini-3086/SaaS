@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #e8e8e8;
+            background: #0d0d0d;
+        }
+
+        nav {
+            background: #000;
+            padding: 1.2rem 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #2a0a0a;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #e63946;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #b8b8b8;
+            font-size: 0.95rem;
+            transition: color 0.4s ease;
+        }
+
+        .nav-links a:hover {
+            color: #e63946;
+        }
+
+        .btn {
+            padding: 0.8rem 1.8rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.4s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #e63946;
+            color: #fff;
+            box-shadow: 0 3px 12px rgba(230, 57, 70, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #d62839;
+            box-shadow: 0 5px 18px rgba(230, 57, 70, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            padding: 6rem 6% 5rem;
+            text-align: center;
+            background: linear-gradient(165deg, #0d0d0d 0%, #1f1f1f 50%, #0d0d0d 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.3rem;
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #a8a8a8;
+            margin-bottom: 2.5rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .features {
+            padding: 5rem 6%;
+            background: #0a0a0a;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3.5rem;
+        }
+
+        .section-intro h2 {
+            font-size: 2.2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .section-intro p {
+            color: #999;
+            font-size: 1.05rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: #161616;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .feature-card:hover {
+            border-color: #e63946;
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(230, 57, 70, 0.2);
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #e63946;
+            font-weight: 500;
+        }
+
+        .feature-card p {
+            color: #a5a5a5;
+            line-height: 1.7;
+            font-size: 0.98rem;
+        }
+
+        .cta {
+            padding: 5rem 6%;
+            background: linear-gradient(135deg, #e63946 0%, #c52a36 100%);
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.3rem;
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .btn-secondary {
+            background: #0a0a0a;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background: #1f1f1f;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #000;
+            padding: 2.5rem 6%;
+            text-align: center;
+            color: #777;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .nav-links {
+                gap: 1.2rem;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">SaaSPro</div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#" class="btn btn-primary">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Business Automation That Actually Works</h1>
+        <p>We've built something that makes running your business easier. No complicated setups, no endless tutorials—just powerful tools that help you get things done.</p>
+        <a href="#" class="btn btn-primary">Get Started Free</a>
+    </section>
+
+    <section class="features" id="features">
+        <div class="section-intro">
+            <h2>Everything You Need to Grow</h2>
+            <p>We've packed in all the essentials so you can focus on what really matters—growing your business.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Lightning-Fast Performance</h3>
+                <p>Your time is valuable. That's why we've optimized every detail to make sure things load instantly and run smoothly, no matter how much you're doing.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Security You Can Trust</h3>
+                <p>We take protecting your data seriously. With enterprise-grade encryption and regular security audits, you can rest easy knowing everything's safe.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Smart Analytics</h3>
+                <p>Get the insights that actually help you make better decisions. Our dashboards show you what's working and what needs attention, in plain English.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Plays Well With Others</h3>
+                <p>Already using other tools? Great! We integrate seamlessly with the apps you love, so you don't have to change your workflow.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Always Here to Help</h3>
+                <p>Got a question at 2 AM? We've got real people ready to help, not just bots. Our support team genuinely cares about solving your problems.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Built for Scale</h3>
+                <p>Whether you're just starting out or serving millions of customers, our platform grows with you. No awkward transitions or painful migrations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Transform Your Workflow?</h2>
+        <p>Join thousands of businesses that are already working smarter, not harder.</p>
+        <a href="#" class="btn btn-secondary">Start Your Free Trial</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SaaSPro. Built with care for businesses like yours.</p>
+    </footer>
+</body>
+</html>
